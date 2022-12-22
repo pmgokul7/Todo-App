@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+.liclass:hover {
+  text-decoration: line-through;
+}
+
+.li-active {
+  text-decoration: line-through;
+}
+
+#text-box {
+  width: 90%;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  background-color: lightblue;
+
+  display: flex;
+  
+  justify-content: right;
+  padding-right: 200px;
+  margin-top: 20px;
+}
+
+li {
+background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+
+  margin: auto;
+  margin-bottom: 10px;
+
+}
+
+section {
+  padding: 20px 10px;
+  
+}
+
+#lit {
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.main_container{
+  border: dashed gray;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  background-color: #fff;
+margin: auto;
+width: 600px;
+
+ 
+}
+
+.right{
+ margin-left: 60px;
+ padding: 10px 35px;
+ border: 2px solid grey;
+ height: fit-content;
+ max-width: 250px;
+ overflow: auto;
+ background-color: #fff;
+ 
+}
+
+.completed-list{
+  text-align: center;
+  
+  /* border-bottom: 1px solid grey; */
+}
+.completed-task{
+ 
+  text-align: center;
+  cursor: pointer;
+}
+h3{
+  margin: 0;
+}
+#textbox {
+  color: #111;
+  border-style: dotted;
+  margin-bottom: 10px;
+  background-color: #e5e5e5;
+  border: none;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  font-size: 18px;
+
+}
+
+#listd:hover {
+  background-color: red;
+}
+
+button {
+  z-index: 99;
+  color: #fff;
+  border-radius: 50%;
+  transition: .2s ease-in-out;
+  transform: scale(0);
+  background-color: rgb(240, 96, 96);
+  margin-right: 10px;
+  width: 33px;
+  height: 33px;
+  margin-top: .5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+li:hover button {
+  transform: scale(1);
+}
+
+.clear_btn {
+  display: flex;
+  justify-content: center;
+  background-color: #111;
+  color: #fff;
+  width: 10%;
+  height: 20px;
+  padding: 10px;
+  cursor: pointer;
+  float: right;
+}
+.editDiv{
+  position: relative;
+  background-color: aqua;
+}
+.editInput{
+  border: none;
+  text-align: center;
+  outline: none;
+  
+}
+
+.editDone{
+  position: absolute;
+  left: 0%;
+  top: 0;
+  background-color: green;
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .main_container{
+    width:450px;
+  }
+  body{
+    flex-direction: column;
+  }
+.right{
+  margin-left: 0;
+  margin: auto;
+}
+  .clear_btn {
+    width: fit-content;
+  }
+  section{
+    display: flex ;
+  flex-direction: column;
+  }
+}
